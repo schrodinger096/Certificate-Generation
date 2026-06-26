@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <title>Certificate</title>
+
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background: #f5f0e6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .certificate {
+            width: 794px;         
+            height: 1123px;        
+            padding: 60px;
+            box-sizing: border-box;
+            background: #f8f3ea;
+            border: 10px solid #e0d6c3;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Logo */
+        .logo img {
+            width: 100px;
+            position: absolute;
+            top: 40px;
+            left: 40px;
+        }
+
+        /* Title */
+        .title {
+            font-size: 60px;
+            color: #2c3e50;
+            margin-top: 150px;
+        }
+
+        /* Subtitle */
+        .subtitle {
+            font-size: 22px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        /* Name */
+        .name {
+            font-size: 45px;
+            margin: 40px 0;
+            color: #2c3e50;
+        }
+
+        /* Description */
+        .description {
+            font-size: 18px;
+            width: 70%;
+            margin: 20px auto;
+        }
+
+        /* Footer */
+        .footer {
+            position: absolute;
+            bottom: 100px;
+            left: 80px;
+            right: 80px;
+        }
+
+        .signature {
+            float: left;
+            border-top: 1px solid black;
+            width: 200px;
+            text-align: center;
+            padding-top: 5px;
+        }
+
+        .date {
+            float: right;
+            border-top: 1px solid black;
+            width: 200px;
+            text-align: center;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="certificate">
+
+    <div class="logo">
+        <img src="${logoPath}" alt="logo" />
+    </div>
+
+    <h1 class="title">Certificate</h1>
+    <h2 class="subtitle">of Achievement</h2>
+
+    <h3 class="name">${name}</h3>
+
+    <p class="description">
+        This is to certify that <b>${name}</b> has successfully completed the course
+        with a score of <b>${score}</b>.
+    </p>
+
+    <div class="footer">
+        <div class="signature">Signature</div>
+        <div class="date">${date}</div>
+    </div>
+
+</div>
+
+</body>
+</html>
